@@ -1,0 +1,39 @@
+{
+  "name": "@orbs-network/polygon-utils",
+  "version": "1.0.0",
+  "description": "Set of scripts to clean up annoying resources which terraform fails to clean between polygon runs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run-increase-disk-size": "bin/polygon-utils.js increase-disk-size",
+    "run-clean-disk": "bin/polygon-utils.js clean-disk",
+    "npm-publish" : "npm publish"
+  },
+  "bin": {
+    "polygon-utils": "bin/polygon-utils.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/orbs-network/polygon-utils.git"
+  },
+  "keywords": [
+    "polygon",
+    "orbs",
+    "hybrid",
+    "blockchain"
+  ],
+  "author": "Deddy Dayag",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orbs-network/polygon-utils/issues"
+  },
+  "homepage": "https://github.com/orbs-network/polygon-utils#readme",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "child-process-promise": "^2.2.1",
+    "commander": "^6.0.0",
+    "inquirer": "^7.3.3",
+    "lodash": "^4.17.19",
+    "node-fetch": "^2.6.7"
+  }
+}
